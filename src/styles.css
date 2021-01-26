@@ -5971,3 +5971,150 @@ b {
   font-weight: 700;
 }
 
+.ah-words-wrapper b {
+  color: #fdd76e;
+}
+
+.text-yellow {
+  color: #fdd76e !important;
+}
+
+.text-red {
+  color: #e74c3c !important;
+}
+
+.welcome-area.hero4 .hero-slides .owl-nav {
+  display: none;
+}
+
+.top-5 {
+  top: 5px;
+}
+
+.section-title h2{
+  position: relative;
+  margin-top: 4rem;
+}
+.section-title h2:before {
+  content: attr(data-number);
+  position: absolute;
+  bottom: 0;
+  left: -.125rem;
+  color: #ffebee;
+  font-size: 7.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.0375rem;
+  z-index: -1;
+}
+.section-title span.sub-title {
+  height: 36px;
+  padding: 0 12px;
+  font-size: 15px;
+  line-height: 35px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.extra04-color{
+  background-color: #f4f4ff;
+  color: #0811fb;
+}
+
+.extra05-color {
+  background: rgba(122, 25, 255, 0.1);
+  color: #7A19FF !important;
+}
+
+
+
+.inner-container {
+  position: relative;
+  max-width: 20%;
+  min-width: 360px;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+
+.content {
+  position: absolute;
+  opacity: 0;
+  top: 2em;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.active {
+  display: block !important;
+  margin: 0 auto;
+  opacity: 1;
+  transition: ease-in-out 1s;
+}
+
+.card-render {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2em 0;
+  height: 300px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+}
+
+.card-render:first-child, .card-render:nth-child(2), .card-render:nth-child(3) {
+  background: rgba(122, 25, 255, 0.1);
+  height: 8px;
+  border-radius: 5px 5px 0 0;
+  padding: 0;
+  box-shadow: none;
+}
+.card-render:first-child {
+  margin: 0 50px;
+  background-color: rgba(255, 235, 238, 1)
+}
+.card-render:nth-child(2) {
+  margin: 0 30px;
+}
+.card-render:nth-child(3) {
+  margin: 0 20px;
+}
+.card-render:nth-child(4) {
+  margin: 0 10px;
+}
+
+.card-render .progress-container {
+  background: rgba(37, 117, 252, 0.2);
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+.card-render .progress-container .step {
+  background-color: #0811fb;
+  height: 6px;
+  width: 33%;
+  border-radius: 0 0 0 5px;
+}
+.card-render .content span {
+  color: #e74c3c;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card-render .content h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card-render .content p {
+  margin-top: 15px;
+}
+.card-render .content a {
+  position: relative;
+  bottom: -50px;
+  text-transform: uppercase;
+}
