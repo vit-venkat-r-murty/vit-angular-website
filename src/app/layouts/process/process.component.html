@@ -13,9 +13,9 @@
             <h2 data-animation="fadeInUp" data-delay="500ms"><span class="text-red">Agile software</span> development
               process</h2>
             <p class="mb-4" data-animation="fadeInUp" data-delay="750ms">Designed for remote cooperations</p>
-            <a class="btn saasbox-btn white-btn mr-3 mt-3" href="#discovery"
-               data-animation="fadeInUp" data-delay="1000ms">Discover More <i
-              class="lni lni-scroll-down size-sm position-relative top-5"></i></a>
+            <div class="btn saasbox-btn white-btn mr-3 mt-3" (click)="onClickScroll('discovery')"
+                 data-animation="fadeInUp" data-delay="1000ms">Discover More <i
+              class="lni lni-scroll-down size-sm position-relative top-5"></i></div>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-12 col-lg-6">
-          <div class="feature--thumb mb-80"><img src="assets/img/bg-img/hero-3.png" alt=""></div>
+          <div class="feature--thumb mb-80 "><img src="assets/img/bg-img/hero-6.png" alt=""></div>
         </div>
         <div class="col-12 col-lg-6">
           <div class="feature--text mb-80 section-title">
@@ -51,10 +51,10 @@
               everything and proven processes with right methodology are key to success.</p>
             <p class="mb-4">we follow our custom development process which gives our teams a proven way to deliver IT
               projects within agreed metrics. Both business and technical.</p>
-            <a class="btn saasbox-btn white-btn mr-3 mt-3" href="#"
-               data-animation="fadeInUp" data-delay="1000ms">STEP 2 <i
+            <div class="btn saasbox-btn white-btn mr-3 mt-3" (click)="onClickScroll('iterative')"
+                 data-animation="fadeInUp" data-delay="1000ms">STEP 2 <i
               class="lni lni-scroll-down size-sm position-relative top-5"></i>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
 </div>
 
 <!-- iterative feature area -->
-<div class="feature-area feature3 section-padding-120-70">
+<div class="feature-area feature3 section-padding-120-70" id="iterative">
   <div class="container">
     <div class="row align-items-center justify-content-between">
       <div class="col-12 col-md-6">
@@ -128,11 +128,15 @@
           <p>Adapt to change and stay on the track at the same time. We start each development project with an
             assessment of its requirements in order to create clear, iteration-based development plan. Our risk-free
             model includes pilot-project assessment free of charge.</p>
-          <ul class="pl-0">
+          <ul class="pl-0 mb-1">
             <li>Flexibility</li>
             <li>Risk reduction</li>
             <li>Higher quality</li>
           </ul>
+          <div class="btn saasbox-btn white-btn mr-3 mt-5" (click)="onClickScroll('quality')"
+               data-animation="fadeInUp" data-delay="1000ms">STEP 3 <i
+            class="lni lni-scroll-down size-sm position-relative top-5"></i>
+          </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-5">
@@ -140,6 +144,9 @@
           <div class="card-render inactive-1"></div>
           <div class="card-render inactive-2"></div>
           <div class="card-render inactive-3"></div>
+          <div class="card-render inactive-4"></div>
+          <div class="card-render inactive-4"></div>
+          <div class="card-render inactive-5"></div>
           <div class="card-render">
             <div class="content active">
               <span>Step 1</span>
@@ -165,6 +172,24 @@
               <p>Validating User Stories, executing regression tests, raising defects.</p>
               <a class="button" href="#">Next step <span class="text-red">&rarr;</span></a>
             </div>
+            <div class="content">
+              <span>Step 5</span>
+              <h1>Deployment</h1>
+              <p>Preparing a version for the client review.</p>
+              <a class="button" href="#">Next step <span class="text-red">&rarr;</span></a>
+            </div>
+            <div class="content">
+              <span>Step 6</span>
+              <h1>Evaluation</h1>
+              <p>Demo of a given version and evaluation.</p>
+              <a class="button" href="#">Next step <span class="text-red">&rarr;</span></a>
+            </div>
+            <div class="content">
+              <span>Step 7</span>
+              <h1>Delivered to client</h1>
+              <p>Next iteration</p>
+              <a class="button" href="#">Next step <span class="text-red">&rarr;</span></a>
+            </div>
             <div class="progress-container">
               <div class="step"></div>
             </div>
@@ -175,3 +200,210 @@
   </div>
 </div>
 
+<!-- quality area -->
+<section class="saasbox-pricing-plan-area section-padding-120 bg-gray" id="quality">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-9 col-lg-7 col-xxl-6">
+        <div class="section-heading text-center section-title-center">
+          <span class="sub-title extra03-color">To make technology your competitive advantage.</span>
+          <h2 data-number="03">Quality-driven</h2>
+          <p>Rapidly evolving business demands and competitive environments pose challenges to increase the speed of
+            delivery and do better with less.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero--content--area">
+        <div class="row justify-content-center g-4">
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="100ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-blackboard"></i>
+                <h5>Project planning & control</h5>
+                <p class="mb-0">Scope, milestones, priorities, estimation, reporting</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="300ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-agenda"></i>
+                <h5>Standards & processes</h5>
+                <p class="mb-0">Code Coverage, Quality Gates, Git Flow, DoR, DoD</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="500ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-check-box"></i>
+                <h5>Testing Levels</h5>
+                <p class="mb-0">Unit, integration, system and end-to-end testing</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="700ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-reload"></i>
+                <h5>CI/CD</h5>
+                <p class="mb-0">Executed with Bitbucket Pipelines or Jenkins</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="100ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-code-alt"></i>
+                <h5>Code reviews</h5>
+                <p class="mb-0">Always done by at least two other team members</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="300ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-funnel"></i>
+                <h5>Automated tests</h5>
+                <p class="mb-0">For the most important parts of business logic</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="500ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-code"></i>
+                <h5>Code quality</h5>
+                <p class="mb-0">SOLID, Code Style, Version Control</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Card-->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card hero-card h-100 border-0 wow fadeInUp p-3" data-wow-delay="700ms"
+                 data-wow-duration="1000ms">
+              <div class="card-body">
+                <i class="lni lni-cloud-check"></i>
+                <h5>Cloud solutions</h5>
+                <p class="mb-0">Scalable servers set up on AWS and GCP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="btn saasbox-btn white-btn mr-3 mt-3" (click)="onClickScroll('scalabe')"
+         data-animation="fadeInUp" data-delay="1000ms">STEP 4 <i
+      class="lni lni-scroll-down size-sm position-relative top-5"></i>
+    </div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- scalabe area -->
+<div class="feature-area feature3 section-padding-120-70" id="scalabe">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-12 col-md-6 col-lg-5">
+        <!-- feature section image-->
+        <div class="feature-side-img mb-50"><img src="assets/img/bg-img/hero-3.png" alt=""></div>
+      </div>
+      <div class="col-12 col-md-6">
+        <!-- feature content-->
+        <div class="feature--content mb-50 section-title">
+          <span class="sub-title extra02-color">To speed up quickly whenever you need it.</span>
+          <h2 data-number="04">Scalable</h2>
+          <p><b>We think of it like this:</b> <br><br> If you're a software company, development efficiency is crucial
+            for you. Sometimes you need to make things happen really fast. At the same time, scaling up without
+            sacrificing quality is a challenge.
+          </p>
+          <p>We get it. And we have it covered. We are here for you, you can easily scale up the team, development
+            velocity and the software itself.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- about content area -->
+    <div class="about-content">
+      <div class="row justify-content-between">
+        <!-- single about area -->
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="single-about-area text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+            <div class="icon mx-auto">
+              <i class="lni lni-users"></i>
+            </div>
+            <h4>Scaling up your team</h4>
+            <p>You can start small and scale the team along with your business. <br><br>
+              All of our developers must complete special skill-unification Bootcamp before they start working on
+              commercial projects for clients, so you can be sure you always get the same top-level skills.
+            </p>
+          </div>
+        </div>
+        <!-- single about area -->
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="single-about-area text-center wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+            <div class="icon mx-auto">
+              <i class="lni lni-cloudnetwork"></i>
+            </div>
+            <h4>Scalable infrastructure in cloud</h4>
+            <p>Our DevOps engineers will help you build secure and scalable infrastructure, so your software is ready to
+              grow with your business.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+      <div class="btn saasbox-btn white-btn mr-3 mt-3" (click)="onClickScroll('cooperative')"
+         data-animation="fadeInUp" data-delay="1000ms">STEP 5 <i
+      class="lni lni-scroll-down size-sm position-relative top-5"></i>
+    </div>
+</div>
+
+<!-- cooperative -->
+<section class="about-area about2 section-padding-120" id="cooperative">
+  <div class="container">
+    <div class="row align-items-center justify-content-md-center justify-content-lg-between">
+      <!-- about thumbnail area-->
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="mt-120 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+          <img class="w-100s" src="assets/img/demo-img/tpl/globe.svg" alt=""></div>
+      </div>
+      <!-- about us content area-->
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="aboutUs-content mt-120 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+          <div class="section-heading mb-5 section-title">
+            <span class="sub-title extra01-color">To make you feel like we worked as your in-house team.</span>
+            <h2 data-number="05">Cooperative</h2>
+            <p>No matter what, you can't create an amazing software product without close cooperation between the
+              Product Owner and the development team.</p>
+            <p class="mt-2">Therefore, we see you as a crucial member of our Agile Team.</p>
+          </div>
+          <p>That means you can expect full transparency in the project. As a Product Owner, you are always updated
+            about the status of the development and have full control over the product.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

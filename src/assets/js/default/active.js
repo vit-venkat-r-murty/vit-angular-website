@@ -403,6 +403,9 @@
     var inactive1 = $(".inactive-1");
     var inactive2 = $(".inactive-2");
     var inactive3 = $(".inactive-3");
+    var inactive4 = $(".inactive-4");
+    var inactive5 = $(".inactive-5");
+    var inactive6 = $(".inactive-6");
 
     $(".button").click(function () {
       var nextItem = currentItem.next();
@@ -416,15 +419,27 @@
         currentItem.css({right: "10%", opacity: "1"});
         $(".step").animate({width: "33%"});
         inactive1.animate(
-          {height: "8px", marginLeft: "30px", marginRight: "30px"},
+          {height: "8px", marginLeft: "70px", marginRight: "70px"},
           100
         );
         inactive2.animate(
-          {height: "8px", marginLeft: "20px", marginRight: "20px"},
+          {height: "8px", marginLeft: "60px", marginRight: "60px"},
           100
         );
         inactive3.animate(
-          {height: "8px", marginLeft: "10px", marginRight: "10px"},
+          {height: "8px", marginLeft: "50px", marginRight: "50px"},
+          100
+        );
+        inactive4.animate(
+          {height: "8px", marginLeft: "40px", marginRight: "40px"},
+          100
+        );
+        inactive5.animate(
+          {height: "8px", marginLeft: "30px", marginRight: "30px"},
+          100
+        );
+        inactive6.animate(
+          {height: "8px", marginLeft: "20px", marginRight: "20px"},
           100
         );
       } else if (currentItem.is(contentFirst)) {
@@ -432,6 +447,18 @@
         currentItem = nextItem.addClass("active");
         $(".step").animate({width: "66%"});
         inactive2.animate(
+          {height: "0", marginLeft: "0px", marginRight: "0px"},
+          100
+        );
+        inactive3.animate(
+          {height: "0", marginLeft: "0px", marginRight: "0px"},
+          100
+        );
+        inactive4.animate(
+          {height: "0", marginLeft: "0px", marginRight: "0px"},
+          100
+        );
+        inactive5.animate(
           {height: "0", marginLeft: "0px", marginRight: "0px"},
           100
         );

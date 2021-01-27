@@ -1,13 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 /* ----------------------------------------------------------
-[Master Stylesheet]
-
-Template Name: Vibhum IT Solutions
-Template Author: Designing World
-Template Author URL: https://themeforest.net/user/designing-world
-Version: 1.6.0
-Last Updated: Oct 7, 2020
----------------------------------------------------------- */
 /* ----------------------------------------------------------
 [Table of Contents]
     * Google Fonts
@@ -68,7 +60,6 @@ Last Updated: Oct 7, 2020
 @import url(assets/css/magnific-popup.css);
 @import url(assets/css/jquery.animatedheadline.css);
 @import url(assets/css/default/lineicons.min.css);
-/*@import url(assets/css/font-awesome.min.css);*/
 @import url(assets/css/flag-icon.min.css);
 /* Reboot CSS */
 * {
@@ -81,6 +72,7 @@ html {
   font-family: "Inter", sans-serif;
   color: #8480ae;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -5991,10 +5983,16 @@ b {
   top: 5px;
 }
 
-.section-title h2{
+.section-title h2 {
   position: relative;
   margin-top: 4rem;
 }
+
+.section-title-center h2 {
+  position: relative;
+  margin-top: 4rem;
+}
+
 .section-title h2:before {
   content: attr(data-number);
   position: absolute;
@@ -6007,6 +6005,21 @@ b {
   letter-spacing: -.0375rem;
   z-index: -1;
 }
+
+.section-title-center h2:before {
+  content: attr(data-number);
+  position: absolute;
+  bottom: 0;
+  color: #ffebee;
+  font-size: 7.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.0375rem;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .section-title span.sub-title {
   height: 36px;
   padding: 0 12px;
@@ -6015,16 +6028,41 @@ b {
   display: inline-block;
   margin-bottom: 20px;
 }
-.extra04-color{
+
+.section-title-center span.sub-title {
+  height: 36px;
+  padding: 0 12px;
+  font-size: 15px;
+  line-height: 35px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.extra01-color {
+  background-color: rgba(223, 249, 251,1.0);
+  color: rgba(48, 51, 107,1.0) !important;
+}
+
+.extra02-color {
+  background-color: rgba(24, 220, 255,0.1);
+  color: rgba(30, 55, 153,1.0) !important;;
+}
+
+
+.extra03-color {
+  background-color: rgba(120, 224, 143, 0.3);
+  color: rgba(10, 61, 98, 1.0) !important;;
+}
+
+.extra04-color {
   background-color: #f4f4ff;
-  color: #0811fb;
+  color: #0811fb !important;;
 }
 
 .extra05-color {
   background: rgba(122, 25, 255, 0.1);
   color: #7A19FF !important;
 }
-
 
 
 .inner-container {
@@ -6063,25 +6101,51 @@ b {
   box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
 }
 
-.card-render:first-child, .card-render:nth-child(2), .card-render:nth-child(3) {
+.card-render:first-child,
+.card-render:nth-child(2),
+.card-render:nth-child(3),
+.card-render:nth-child(4),
+.card-render:nth-child(5),
+.card-render:nth-child(6) {
   background: rgba(122, 25, 255, 0.1);
   height: 8px;
   border-radius: 5px 5px 0 0;
   padding: 0;
   box-shadow: none;
 }
+
 .card-render:first-child {
-  margin: 0 50px;
-  background-color: rgba(255, 235, 238, 1)
+  margin: 0 60px;
+  /*background-color: rgba(255, 235, 238, 1);*/
+  background-color: rgba(255, 77, 77,0.3)
 }
+
 .card-render:nth-child(2) {
-  margin: 0 30px;
+  margin: 0 40px;
+  background-color: rgba(72, 52, 212, 0.2);
+
 }
+
 .card-render:nth-child(3) {
-  margin: 0 20px;
+  margin: 0 30px;
+  background-color: rgba(248, 165, 194,0.3)
 }
+
 .card-render:nth-child(4) {
+  margin: 0 20px;
+  background-color: rgba(46, 204, 113, 0.3);
+
+}
+
+.card-render:nth-child(5) {
   margin: 0 10px;
+  background-color: rgba(205, 132, 241,0.5)
+
+}
+
+.card-render:nth-child(6) {
+  margin: 0 0;
+  background-color: rgba(223, 249, 251, 1.0);
 }
 
 .card-render .progress-container {
@@ -6093,28 +6157,42 @@ b {
   width: 100%;
   border-radius: 0 0 5px 5px;
 }
+
 .card-render .progress-container .step {
   background-color: #0811fb;
   height: 6px;
   width: 33%;
   border-radius: 0 0 0 5px;
 }
+
 .card-render .content span {
   color: #e74c3c;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .card-render .content h1 {
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .card-render .content p {
   margin-top: 15px;
 }
+
 .card-render .content a {
   position: relative;
   bottom: -50px;
   text-transform: uppercase;
+}
+
+.w-100s {
+  width: 600px !important;
+  overflow: hidden;
+  position: relative;
+  right: 40%;
+  top: 0;
+  max-width: none;
 }

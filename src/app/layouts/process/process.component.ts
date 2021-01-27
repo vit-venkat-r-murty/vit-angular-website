@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-process',
@@ -7,7 +8,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ProcessComponent implements OnInit {
 
-  constructor() { }
+  constructor(private viewportScroller: ViewportScroller) { }
+
+  onClickScroll(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
+  }
 
   ngOnInit(): void {
     this.loadScript('assets/js/default/cookiealert.js');
