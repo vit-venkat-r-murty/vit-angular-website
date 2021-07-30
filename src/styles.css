@@ -602,7 +602,7 @@ textarea:invalid {
 .section-heading.white h6,
 .section-heading.white h2,
 .section-heading.white p {
-  color: #003272;
+  color: #fff;
 }
 
 .card {
@@ -831,7 +831,7 @@ textarea:invalid {
 }
 
 .header2 .classynav ul li a:hover, .header2 .classynav ul li a:focus {
-  color: #003272;
+  color: #0811fb;
 }
 
 .header2 .classynav ul li.has-down > a::after,
@@ -1051,7 +1051,7 @@ textarea:invalid {
 
 .background-animation .star-ani::after {
   position: absolute;
-  content: "\e950";
+  content: "\e919";
   top: 10%;
   left: 10%;
   z-index: -1;
@@ -1075,7 +1075,7 @@ textarea:invalid {
 
 .background-animation .cloud-ani::after {
   position: absolute;
-  content: "\e950";
+  content: "\e908";
   top: 10%;
   left: 10%;
   z-index: -1;
@@ -1101,9 +1101,10 @@ textarea:invalid {
   width: 20px;
   height: 20px;
   position: absolute;
-  content: "";
+  content: "\e914";
   top: 10%;
   left: 10%;
+  font-family: "LineIcons";
   border: 3px solid rgba(255, 255, 255, 0.2);
   z-index: -1;
   border-radius: 50%;
@@ -1965,7 +1966,7 @@ textarea:invalid {
   border-radius: .75rem;
 }
 
-.aboutUs-thumbnail::before {
+/* .aboutUs-thumbnail::before {
   content: "";
   position: absolute;
   width: 60%;
@@ -1975,7 +1976,7 @@ textarea:invalid {
   right: 70%;
   z-index: 10;
   border-radius: 3px;
-}
+} */
 
 .aboutUs-thumbnail img {
   border-radius: .75rem;
@@ -2075,7 +2076,7 @@ textarea:invalid {
   padding: 1.5rem;
 }
 
-.hero-card i {
+.hero-cards i {
   color: #003272;
   font-size: 2.5rem;
   display: block;
@@ -2760,7 +2761,7 @@ textarea:invalid {
 }
 
 .saasbox-features-area .row .row .col-12:first-child .feature-card i {
-  background-color: #00b894;
+  background-color: #003272;
 }
 
 .saasbox-features-area .row .row .col-12:nth-child(2) .feature-card i {
@@ -2768,8 +2769,7 @@ textarea:invalid {
 }
 
 .saasbox-features-area .row .row .col-12:nth-child(3) .feature-card i {
-  background-color: #ff7f50;
-  color: #003272;
+  background-color: #003272;
 }
 
 .saasbox-features-area .row .row .col-12:nth-child(4) .feature-card i {
@@ -2777,7 +2777,7 @@ textarea:invalid {
 }
 
 .saasbox-features-area .row .row .col-12:nth-child(5) .feature-card i {
-  background-color: #00b894;
+  background-color: #003272;
 }
 
 .saasbox-features-area .row .row .col-12:nth-child(6) .feature-card i {
@@ -6213,4 +6213,23 @@ b {
 }
 .breadcrumb--area{
 	height: 350px;
+}
+
+.display-flex{
+	display: flex;
+	justify-content: start;
+	align-items : center;
+}
+.display-flex i{
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+
+.display-flex img{
+	filter: brightness(0) saturate(100%) invert(11%) sepia(99%) saturate(3122%) hue-rotate(205deg) brightness(80%) contrast(125%);
+	margin-right: 20px;
+	width: 40px;
+}
+.footer-social-icon .fa-lg{
+	vertical-align: 0%;
 }

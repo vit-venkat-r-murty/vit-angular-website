@@ -11,6 +11,6 @@ const routes: Routes = [
     scrollPositionRestoration: 'enabled',
     anchorScrolling : 'enabled'
   })],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
