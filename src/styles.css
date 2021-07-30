@@ -6233,3 +6233,7 @@ b {
 .footer-social-icon .fa-lg{
 	vertical-align: 0%;
 }
+#contactForm .saasbox-btn:hover, .saasbox-btn:focus{
+	background-color: #ff7f50;
+	color: #fff;
+}
