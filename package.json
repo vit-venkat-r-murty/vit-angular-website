@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
-    "scully:serve": "scully serve"
+    "scully:serve": "scully serve",
+    "build-gzip": "ng build --prod && gzipper compress ./dist"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +26,7 @@
     "@scullyio/ng-lib": "^1.0.0",
     "@scullyio/scully": "^1.0.0",
     "emailjs-com": "^3.2.0",
+    "gzipper": "^5.0.0",
     "rxjs": "~6.5.5",
     "sweetalert2": "^11.0.20",
     "tslib": "^2.0.0",

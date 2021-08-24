@@ -13,7 +13,7 @@ const routes: Routes = [
 	{ path: 'about-us', component: AboutUsComponent },
 	{ path: 'services', component: ServicesComponent },
 	{ path: 'process', component: ProcessComponent },
-	{ path: 'career', component: CareerComponent },
+	{ path: 'careers', component: CareerComponent },
 	{ path: 'contact', component: ContactComponent },
 	{ path: 'page-not-found', component: NotFoundComponent },
 	{ path: '**', redirectTo: '/page-not-found' }
