@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {ScullyLibModule} from '@scullyio/ng-lib';
 import {LayoutsModule} from './layouts/layouts.module';
 
 @NgModule({
@@ -13,7 +12,6 @@ import {LayoutsModule} from './layouts/layouts.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScullyLibModule,
     LayoutsModule
   ],
   providers: [],
