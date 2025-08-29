@@ -1,0 +1,1 @@
+(function(){'use strict';function a(){var a=document.body.scrollTop||document.documentElement.scrollTop,b=document.documentElement.scrollHeight-document.documentElement.clientHeight;document.getElementById("scrollIndicator").style.width=100*(a/b)+"%"}window.onscroll=function(){a()}})(jQuery);
